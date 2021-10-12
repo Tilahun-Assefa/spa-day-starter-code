@@ -12,15 +12,49 @@ div {
 
 h1 {
     margin: auto;
-        width: 50%;
-        padding: 10px;
-        text-align: center;
-        background-color: white;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
 }
 
 table {
     margin: auto;
-            width: 50%;
-            padding: 10px;
-            text-align: center;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
 }
+.footer{
+    overflow: hidden;
+    background-color: #EAEDF0;
+}
+.matte {
+    background-color: grey;
+    float: left;
+    width: 20%;
+    margin: 20px 1.15%;
+    height: 60px;
+}
+.sheer{
+    float: left;
+    width: 20%;
+    margin: 20px 1.15%;
+    height: 60px;
+    background-color: #B2D6FF;
+}
+.pearl{
+    float: left;
+    width: 20%;
+    margin: 20px 1.15%;
+    height: 60px;
+    background-color: #A2D6FF;
+}
+.metallic{
+    float: left;
+    width: 20%;
+    margin: 20px 1.15%;
+    height: 60px;
+    background-color: #B2D6FF;
+}
+
+
