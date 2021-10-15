@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments::head"></head>
+<body>
+<h3 th:text="${title}" class="card">User</h3>
+
+<p th:text="${'User Name: '+ user.username}" class="h4">Name</p>
+<p th:text="${'Email: '+ user.email}" class="h4">Email</p>
+<p th:text="${'Sign Up on ' + date}" class="h5">Sign Date</p>
+
+</body>
+</html>

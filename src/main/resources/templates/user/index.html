@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments::head"></head>
+<body>
+<a th:href="@{/user/add}">Add User</a>
+<ul class="nav">
+    <th:block th:each="user:${users}">
+        <li th:text="${user.getUsername()}" class="nav-item"></li>
+        <a th:href="@{/user/detail/{id}(id=${user.id})}" class="nav-item">Detail</a>
+    </th:block>
+</ul>
+<a th:href="@{/}">Spa</a>
+</body>
+</html>
