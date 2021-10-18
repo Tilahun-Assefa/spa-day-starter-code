@@ -16,6 +16,7 @@ public class User {
     public User() {
         this.id = nextId;
         nextId++;
+        this.signDate = LocalDateTime.now();
     }
 
     public User(String username, String email, String password) {
@@ -23,7 +24,6 @@ public class User {
         this.username = username;
         this.email = email;
         this.password = password;
-        this.signDate = LocalDateTime.now();
     }
 
     public int getId() {
@@ -61,6 +61,4 @@ public class User {
     public String toString() {
         return username;
     }
-
-
 }
