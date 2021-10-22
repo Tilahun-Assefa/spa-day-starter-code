@@ -12,9 +12,12 @@ public class User {
     @Email(message = "Invalid email")
     private String email;
 
-    @NotBlank(message = "Can not be empty.")
-    @Size(min = 6, message = "password should be 6 or more characters long.")
+    @NotBlank(message = "Password can not be empty.")
+    @Size(min = 6, message = "Password should be 6 or more characters long.")
     private String password;
+
+    @NotBlank(message = "Verify password can not be empty.")
+    private String verify;
 
     public User() {
     }
@@ -49,5 +52,12 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+    public String getVerify() {
+        return verify;
+    }
+
+    public void setVerify(String verify) {
+        this.verify = verify;
     }
 }

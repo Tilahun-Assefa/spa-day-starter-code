@@ -14,7 +14,7 @@ public class UserController {
 
     @GetMapping("/add")
     public String displayAddUserForm(Model model) {
-        model.addAttribute("user",new User());
+        model.addAttribute(new User());
         return "user/add";
     }
 
@@ -27,8 +27,6 @@ public class UserController {
             model.addAttribute("error", "Passwords do not match");
             return "user/add";
         }
-        model.addAttribute("user", user);
-        model.addAttribute("verify", verify);
-        return "user/index";
+       return "user/index";
     }
 }
