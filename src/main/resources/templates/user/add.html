@@ -31,10 +31,9 @@
     <div class="form-group">
         <label>
             Verify Password:
-            <input type='password' name='verify' class="form-control">
+            <input type='password' th:field='${user.verifyPassword}' class="form-control">
         </label>
-        <p class="error" th:text="${error}"></p>
-        <p class="error" th:errors="${user.verify}"></p>
+        <p class="error" th:errors="${user.verifyPassword}"></p>
     </div>
     <input type='submit' value='Sign Up'>
 </form>
